@@ -1,0 +1,52 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-break: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; /* fix for shaky animations */
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    white-space: nowrap ;
+    animation: moveInLeft 2s;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.9rem;
+    margin-top: .5rem;
+    animation: moveInRight 2s;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $color-primary-dark;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: skewY(2deg);
+    transform: skewX(-4deg);
+    text-shadow: 0.5rem 1rem 1rem rgba(black, .2);
+  }
+}
+
